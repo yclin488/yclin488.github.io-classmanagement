@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入頁面</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>登入</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="使用者名稱" required>
+            <input type="password" id="password" placeholder="密碼" required>
+            <button type="submit">登入</button>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>課程表管理系統</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>課程表管理系統</h1>
+        
+        <div class="course-form">
+            <h2>新增課程</h2>
+            <form id="course-form">
+                <input type="text" id="course-name" placeholder="課程名稱" required>
+                <input type="text" id="course-location" placeholder="上課地點" required>
+                <input type="datetime-local" id="course-time" required>
+                <input type="number" id="reminder-time" placeholder="提醒時間(分鐘)" required>
+                <button type="submit">新增課程</button>
+            </form>
+        </div>
+        
+        <div class="course-list">
+            <h2>我的課程表</h2>
+            <ul id="course-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
